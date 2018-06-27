@@ -1,0 +1,26 @@
+page-intro {
+
+    .ios, .md {
+        
+         page-intro {
+        
+           ion-slide {
+            background-size: 100% 100%;
+             background-color: #a31d00;
+           }
+        
+           ion-slide img {
+
+
+            // background-size: 20% 20%;
+              height: 30vh !important;
+              width: auto !important;
+
+           }
+        
+         }
+        
+       }
+
+
+}

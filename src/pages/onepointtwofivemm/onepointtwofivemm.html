@@ -1,0 +1,132 @@
+<!--
+  Generated template for the OnepointtwofivemmPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+      <div class="Aligner-item Aligner-item--top"></div>
+      <img src="./assets/images/logo.png">
+      <div class="Aligner-item Aligner-item--bottom"></div>
+    </div>
+  </div>
+  
+  <ion-header style="background-color: rgb(10,01,01);">
+    <ion-navbar>
+  
+  
+  
+      <button ion-button menuToggle>
+        <ion-icon name="menu" class="menu"></ion-icon>
+      </button>
+      <img src="./assets/images/drawable-xxxhdpi-icon.png" style="float:right; height: 13%; width:13%;  ">
+      <div center text-center style="color: white; font-size: 1.25em; "><b>1.25MM</b> </div>
+  
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content center text-center style="background-color: black;">
+  <div center text-center *ngFor="let type of productType; let i=index" (click)="fetchProducts(type,i)" class="wrapper">
+    
+      <img width="100%" height="10%" src="./assets/images/products/{{type}}.jpg">
+      </div>
+  
+ 
+    
+      
+   
+    <!--  <div center text-center (click)="onClickCurvewood()" class="wrapper">
+        <img width="100%" height="10%" src="./assets/images/products/curvewood.jpg">
+        
+      
+      </div>
+ 
+      <div center text-center (click)="onClickDenverOak()" class="wrapper">
+         <img width="100%" height="10%" src="./assets/images/products/denveroak.jpg">
+         
+       
+       </div>
+       <div center text-center (click)="onClickFrontier()" class="wrapper">
+           <img width="100%" height="10%" src="./assets/images/products/frontier.jpg">
+          
+         
+         </div>
+     
+         <div center text-center (click)="onClickHighgloss()" class="wrapper">
+             <img width="100%" height="10%" src="./assets/images/products/highgloss.jpg">
+             
+           
+           </div>
+     
+           <div center text-center (click)="onClickLibris()" class="wrapper">
+               <img width="100%" height="10%" src="./assets/images/products/libris.jpg">
+               
+             
+             </div>
+             <div center text-center (click)="onClickMaridian()" class="wrapper">
+                 <img width="100%" height="10%" src="./assets/images/products/maridian.jpg">
+                
+               
+               </div>
+               <div center text-center (click)="onClickOak()" class="wrapper">
+                   <img width="100%" height="10%" src="./assets/images/products/oak.jpg">
+                   
+                 
+                 </div>
+                 <div center text-center (click)="onClickSteekoak()" class="wrapper">
+                    <img width="100%" height="10%" src="./assets/images/products/steekoak.jpg">
+                    
+                  
+                  </div>
+                  <div center text-center (click)="onClickSupermatt()" class="wrapper">
+                      <img width="100%" height="10%" src="./assets/images/products/supermatt.jpg">
+                      
+                    
+                    </div>
+                    <div center text-center (click)="onClickVeneer()" class="wrapper">
+                        <img width="100%" height="10%" src="./assets/images/products/veneer.jpg">
+                        
+                      
+                      </div>
+                      <div center text-center (click)="onClickWonderwood()" class="wrapper">
+                          <img width="100%" height="10%" src="./assets/images/products/wonderwood.jpg">
+                          
+                        
+                        </div>
+                        <div center text-center (click)="onClickWoody()" class="wrapper">
+                            <img width="100%" height="10%" src="./assets/images/products/woody.jpg">
+                            
+                          
+                          </div> -->
+            
+             <div center text-center class="primary_div"> 
+                 <div style="color: white; font-size: 1.25em; padding-top: 15px;"><b>share us on</b></div>
+                 </div>
+ 
+             <ion-grid style="color:white; height: 20%;" >
+                 
+                <ion-row> 
+                  <ion-col align-self-start>
+                    <div style="align-content:center;">
+                      
+                           <ion-icon ios="logo-facebook" md="logo-facebook">Facebook</ion-icon>
+                    </div>
+                  </ion-col>
+                  <ion-col align-self-center>
+                    <div>
+                       <ion-icon ios="logo-instagram" md="logo-instagram">Instagram</ion-icon>
+                    </div>
+                  </ion-col>
+                  <ion-col align-self-end>
+                    <div>
+                       <ion-icon ios="logo-youtube" md="logo-youtube" (click)="onWhatsappShare()">YouTube22</ion-icon>
+                       
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+ 
+ 
+ 
+ </ion-content>

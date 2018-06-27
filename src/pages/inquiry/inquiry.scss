@@ -1,0 +1,54 @@
+page-inquiry {
+
+    $assertive :#2a9299;
+    .button-float{
+      background: $assertive !important;
+      color:white !important;
+      z-index: 15 !important;
+      position: absolute !important; 
+      bottom: 15ch !important;
+      right: 15px !important;
+      border-radius: 80% !important;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+      -webkit-transform: translate3d(0, 0, 0) !important;
+      transform: translate3d(0, 0, 0) !important;
+      -webkit-transition: 0.2s linear !important;
+      transition: 0.2s linear !important;
+      -webkit-transition-property: -webkit-transform, all !important;
+      transition-property: transform, all !important;
+    
+    }
+    
+    .button-float:hover{
+      -webkit-transform: translate3d(0, -1px, 0)  !important;
+      transform: translate3d(0, -1px, 0) !important;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4) !important;
+    background: darken($assertive, 10%) !important;
+    }
+     
+    .bg
+    {
+    
+    width: 100%; 
+    background-size: 100%,100%;
+    background-color: rgb(224, 224, 224);
+    
+    }
+
+    // .buttonClass
+    // {
+      
+    //    background:-webkit-linear-gradient(left, rgba(243,226,199,1) 0%, rgba(212,137,23,1) 50%, rgba(207,124,0,1) 51%, rgba(233,212,179,1) 100%);
+    //   // background-image: url("../assets/images/bg_3d2.jpg");
+    //  // background: transparent;
+    //     color: #1D1D1D;
+    //     font-size: 17px;
+    //     font-family: 'Palatino Linotype';
+        
+    // }
+    agm-map {
+      height: 300px;
+    }
+    
+
+}

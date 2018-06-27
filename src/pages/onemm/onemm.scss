@@ -1,0 +1,32 @@
+page-onemm {
+
+
+
+    .primary_div{
+        background: -moz-linear-gradient(90deg, #B24444, #8D3E3E, #131393);
+        background-color:rgb(10,01,01);
+       
+        width: 100%;
+        height: 50px;
+        text-align: left;
+    
+        
+        
+      }
+
+  .wrapper{
+    position: relative;
+  }
+  .wrapper p {
+   
+    bottom: -10%;
+    color: white;
+    font-family:sans-serif;
+    font-size: 1.25em;
+    left: 40%;
+    padding: 0.25em 0.75em;
+    position: absolute;
+  }
+
+
+}

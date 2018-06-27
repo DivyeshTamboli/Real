@@ -1,0 +1,94 @@
+<!--
+  Generated template for the ECataloguePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+      <div class="Aligner-item Aligner-item--top"></div>
+      <img src="./assets/images/logo.png">
+      <div class="Aligner-item Aligner-item--bottom"></div>
+    </div>
+  </div>
+  
+  <ion-header style="background-color: rgb(10,01,01);">
+    <ion-navbar>
+  
+  
+  
+      <button ion-button menuToggle>
+        <ion-icon name="menu" class="menu"></ion-icon>
+      </button>
+      <img src="./assets/images/drawable-xxxhdpi-icon.png" style="float:right; height: 13%; width:13%;  ">
+      <div center text-center style="color: white; font-size: 1.25em; "><b>E-Catalogue</b> </div>
+  
+    </ion-navbar>
+  </ion-header>
+<ion-content center text-center class="bg"> 
+  <ion-img width="100%" height="33%" src="./assets/images/3dViewBanner.jpg"></ion-img>
+
+
+
+  <ion-list >
+      <button ion-item class="buttonClass" (click)="onClickofVivo125Book()"> 
+          <ion-icon ios="ios-book" md="md-book" item-start></ion-icon>
+          RealTouch Vivo 1.25 Folder
+          <ion-icon style="float:right;"  ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" ></ion-icon>
+        </button>
+
+        <button ion-item class="buttonClass" (click)="onClickofLaminateBook()">
+            <ion-icon ios="ios-book" md="md-book" item-start></ion-icon>
+            Real Trendz  Book
+            <ion-icon style="float:right;"  ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" ></ion-icon>
+          </button>     
+
+    <button ion-item class="buttonClass" (click)="onClickofKlasBook()">
+        <ion-icon ios="ios-book" md="md-book" item-start></ion-icon>
+       Klas (1mm Folder)
+        <ion-icon style="float:right;"  ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" ></ion-icon>
+      </button>
+
+    <button ion-item class="buttonClass" (click)="onClickofPixelDigitalBook()">
+        <ion-icon ios="ios-book" md="md-book" item-start></ion-icon>
+        Pixel Digital 
+        <ion-icon style="float:right;"  ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" ></ion-icon>
+      </button>
+
+    <button ion-item class="buttonClass" (click)="onClickofRealKitchenBook()">
+        <ion-icon ios="ios-book" md="md-book" item-start></ion-icon>
+        Real Kitchen CD and VT Digital
+        <ion-icon style="float:right;"  ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" ></ion-icon>
+      </button>
+
+    
+
+    
+
+    <button ion-item class="buttonClass"> 
+          <ion-icon ios="ios-book" md="md-book" item-start></ion-icon>
+          Redora 2017
+          <ion-icon style="float:right;"  ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" ></ion-icon>
+        </button>
+
+    <button ion-item class="buttonClass"> 
+            <ion-icon ios="ios-book" md="md-book" item-start></ion-icon>
+            Roxx Digital
+            <ion-icon style="float:right;"  ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" ></ion-icon>
+          </button>
+
+
+    <button ion-item class="buttonClass"> 
+            <ion-icon ios="ios-book" md="md-book" item-start></ion-icon>
+             Roxx Lamm 1 MM Folder
+            <ion-icon style="float:right;"  ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" ></ion-icon>
+          </button>
+
+    <button ion-item class="buttonClass"> 
+              <ion-icon ios="ios-book" md="md-book" item-start></ion-icon>
+             Real Plus 0.8 MM Folder
+              <ion-icon style="float:right;"  ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" ></ion-icon>
+            </button>
+  </ion-list>

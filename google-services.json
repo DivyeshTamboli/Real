@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "318026263467",
+    "firebase_url": "https://realtouchnotification.firebaseio.com",
+    "project_id": "realtouchnotification",
+    "storage_bucket": "realtouchnotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318026263467:android:0ed43113eb71d897",
+        "android_client_info": {
+          "package_name": "io.ionic.realtouch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318026263467-6o1dkvaaei7fu5cu5i0hlffujklr1nr3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC231NgYxZ1CJ38PTf65qFPTipPHnexfRM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318026263467-6o1dkvaaei7fu5cu5i0hlffujklr1nr3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

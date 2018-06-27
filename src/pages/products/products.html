@@ -1,0 +1,49 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="./assets/images/logo.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+<ion-header style="background-color: rgb(10,01,01);">
+  <ion-navbar>
+
+
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="menu"></ion-icon>
+    </button>
+    <img src="./assets/images/drawable-xxxhdpi-icon.png" style="float:right; height: 13%; width:13%;  ">
+    <div center text-center style="color: white; font-size: 1.25em; ">
+      <b>Products</b>
+    </div>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content center text-center style="background-color:black; width: 100%;">
+
+    <ion-card (click)="onClickOnemmPage()">
+       
+        <img src="./assets/images/laminate_1mm.jpg" >
+    
+
+    </ion-card>    
+    <ion-card (click)="onClickOnepointtwofivemmPage()">
+     
+        <img src="./assets/images/laminate_125mm.jpg">
+     
+
+    </ion-card>    
+    <ion-card >
+        
+        <img src="./assets/images/laminate_08mm.jpg">
+    
+
+    </ion-card>    
+    
+  
+  
+  
+  </ion-content>

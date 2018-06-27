@@ -1,0 +1,45 @@
+<!--
+  Generated template for the FirebaseImagesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header style="background-color: rgb(10,01,01);">
+  <ion-navbar>
+
+
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="menu"></ion-icon>
+    </button>
+    <img src="./assets/images/drawable-xxxhdpi-icon.png" style="float:right; height: 13%; width:13%;  ">
+    <div center text-center style="color: white; font-size: 1.25em; ">
+      <b>Album Description</b>
+    </div>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background-color: rgb(10,01,01);" >
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 *ngFor="let prod of products">
+        <ion-card (click)="showDetails(prod)">
+           
+            <ion-card-title primary style="font-size: 10px; background-color: rgba(43, 43, 43, 0.753);color: white; text-align: center; ">{{ prod.name }}</ion-card-title>
+          <img [src]="prod.url">
+          <ion-card-content style="background-color: rgba(128, 129, 129, 0.219);">
+              
+              <ion-card-title primary style="font-size: 10px;">Design Number: {{ prod.designnumber }}</ion-card-title>
+           
+              <ion-card-title primary style="font-size: 10px;">Dimension: {{ prod.dimension }}</ion-card-title>
+              <ion-card-title primary style="font-size: 10px;">Finishing Type: {{ prod.finishingtype }}</ion-card-title>
+            
+          </ion-card-content>
+        
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

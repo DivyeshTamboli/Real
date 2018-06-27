@@ -1,0 +1,81 @@
+<!--
+  Generated template for the InquiryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+      <div class="Aligner-item Aligner-item--top"></div>
+      <img src="./assets/images/logo.png">
+      <div class="Aligner-item Aligner-item--bottom"></div>
+    </div>
+  </div>
+  
+  <ion-header style="background-color: rgb(10,01,01);">
+    <ion-navbar>
+  
+  
+  
+      <button ion-button menuToggle>
+        <ion-icon name="menu" class="menu"></ion-icon>
+      </button>
+      <img src="./assets/images/drawable-xxxhdpi-icon.png" style="float:right; height: 13%; width:13%;  ">
+      <div center text-center style="color: white; font-size: 1.25em; "><b>Inquiry</b> </div>
+  
+    </ion-navbar>
+  </ion-header>
+<ion-content center padding class="bg" >
+        <!-- <ion-img width="100%" height="33%" src="./assets/images/contactus.jpg"></ion-img> -->
+        
+    <form style="width:100%;" #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+     
+        
+         
+
+         <!-- <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map> -->
+        <ion-card>
+            
+              <img src="./assets/images/contactus.jpg">
+
+             
+
+              <ion-item>
+                <ion-icon ios="ios-home" md="md-home" item-start large></ion-icon>
+                
+                <h2> Rangoli Laminates Pvt Ltd</h2>
+                <p> 8-A, National Highway,Lalpar,Morbi </p>
+                <p>Gujarat- 363642</p>
+                    <p>Phone:099251 46551</p>
+              </ion-item>
+            
+          
+            
+             
+            
+            </ion-card>
+
+
+            
+      <!-- <ion-card>
+        <div style="border: 1px;"> <iframe width="100%" height="240" src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&amp;height=600&amp;hl=ru&amp;q=%208-A%2C%20National%20Highway%2C%20Lalpar%2CMorbi%2C%20Gujarat-%20363642+(Rangoli%20Laminates%20Pvt%20Ltd%20%5BREAL%20TOUCH%20%5D)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="border: 1px; ">&lt;a href="https://www.mapsdirections.info/en/custom-google-maps/"&gt;Create a custom Google Map&lt;/a&gt; by &lt;a href="https://www.mapsdirections.info/en/"&gt;UK Maps&lt;/a&gt;</iframe></div>
+      </ion-card>
+       -->
+        <ion-fab center center >
+          <button ion-fab type="button"><ion-icon name="person"></ion-icon></button>
+          <ion-fab-list side="bottom" >
+            <button ion-fab  type="submit"><ion-icon name="mail"></ion-icon></button>
+            <button ion-fab type="button" (click)="onCallClick()"><ion-icon name="call"></ion-icon></button>
+           <button ion-fab   type="button"onclick="window.open('https://www.facebook.com/pages/Realtouch-Laminate/1019176871498478', '_system');"><ion-icon name="logo-facebook"></ion-icon></button>
+
+            <button ion-fab  type="button"><ion-icon name="logo-twitter"></ion-icon></button>
+          </ion-fab-list>
+        </ion-fab>
+   
+        
+        
+    </form>
+</ion-content>

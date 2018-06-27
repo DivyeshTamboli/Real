@@ -1,0 +1,141 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="./assets/images/logo.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+<ion-header style="background-color: rgb(10,01,01);">
+  <ion-navbar>
+
+
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="menu"></ion-icon>
+    </button>
+    <img src="./assets/images/drawable-xxxhdpi-icon.png" style="float:right; height: 13%; width:13%;  ">
+    <div center text-center style="color: white; font-size: 1.25em; "><b>Realtouch - Exotic Laminates</b> </div>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content center text-center style="background-color:black; width: 100%;">
+
+
+    
+  <ion-slides autoplay=1000; loop="true" speed="3000" class="slider" item-height="100%">
+    <ion-slide>
+      <img src="./assets/images/dwg_room1.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="./assets/images/SLIDE2.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="./assets/images/SLIDE3.jpg">
+    </ion-slide>
+
+  </ion-slides>
+  <div> </div>
+ <div center text-center style="margin-left: 7%; margin-top: 1%" >
+   <ion-row>
+    <ion-col col-3 (click)="onClickofCircleAbout();" > 
+      
+     <img class="round-button" src="./assets/images/aboutusbanner.jpg"  > 
+        
+       
+    </ion-col>
+    <ion-col col-3 (click)="onClickofCircleProducts();">
+        <img class="round-button" src="./assets/images/dwg_room5.jpg">
+      
+    </ion-col>
+    <ion-col col-3 (click)="onClickofCircleCatalogue();">
+        <img class="round-button" src="./assets/images/3dViewBanner.jpg">
+      
+    </ion-col>
+    <ion-col col-3 (click)="onClickofCircleInquiry();">
+        <img class="round-button" src="./assets/images/contactus.jpg">   
+       
+    </ion-col>
+  </ion-row>
+  <ion-row >
+      <ion-col col-3 >
+        
+       
+          <p class="round-text" (click)="onClickofCircleAbout()">About Us</p>
+      </ion-col>
+      <ion-col col-3 >
+         
+           <p  class="round-text">Products</p>
+      </ion-col>
+      <ion-col col-3 >
+         
+          <p class="round-text" >Catalogue</p>
+      </ion-col>
+      <ion-col col-3>
+         
+          <p class="round-text" >&nbsp;&nbsp;Inquiry</p>
+      </ion-col>
+    </ion-row>
+</div>
+  <!-- <div center text-center class="primary_div">
+    <div style="color: white; font-size: 1.25em; padding-top: 15px;"><b>Laminates Categories</b></div>
+  </div> -->
+
+
+
+  <div center text-center class="wrapper" (click)="onClickOnemmPage()">
+      <img width="100%" height="20%"  src="./assets/images/1_mm.jpg">
+      <!-- <p>1 MM</p> -->
+  </div>
+
+  <div center text-center class="wrapper" (click)="onClickOnepointtwofivemmPage()">
+    <img width="100%" height="20%"  src="./assets/images/1.25.jpg">
+    <!-- <p>1.25 MM</p> -->
+
+  </div>
+  <div center text-center class="wrapper" (click)="onClickPointEightmmPage()" class="wrapper">
+    <img width="100%" height="20%" src="./assets/images/125MM.JPEG">
+    <!-- <p>0.8 MM</p> -->
+
+  </div>
+  <div center text-center class="primary_div">
+    <div style="color: white; font-size: 1.25em; padding-top: 15px;"><b>E-Catalogue</b></div>
+  </div>
+
+  <div style="background-color:white;">
+
+    <ion-grid>
+      
+      <ion-row justify-content-center>
+        <ion-col col-4 align-self-start>
+          <div style="align-content:center;" >
+            <ion-img class="ionImage" width="100%" height="120"  [src]="imageLinks[2]"></ion-img>
+
+            <button icon-right ion-button round color="button-color" (click)="onClickEcataloguePage()"><b>View</b>
+              <ion-icon name="ios-arrow-dropright"></ion-icon>
+            </button>
+          </div>
+        </ion-col>
+        <ion-col col-4 align-self-center>
+          <div >
+            <ion-img class="ionImage" width="100%" height="120" [src]="imageLinks[1]"></ion-img>
+            <button icon-right ion-button round color="button-color" (click)="onClickEcataloguePage()">
+               
+              <b>View</b> <ion-icon  name="ios-arrow-dropright" ></ion-icon></button>
+          </div>
+        </ion-col>
+        <ion-col col-4 align-self-end>
+          <div >
+            <ion-img class="ionImage" width="100%" height="200" [src]="imageLinks[0]"></ion-img>
+            <button icon-right ion-button round color="button-color" (click)="onClickEcataloguePage()"><b>View</b>
+              <ion-icon name="ios-arrow-dropright" ></ion-icon>
+            </button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  
+
+

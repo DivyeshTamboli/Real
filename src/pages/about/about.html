@@ -1,0 +1,60 @@
+<!--
+  Generated template for the AboutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+      <div class="Aligner-item Aligner-item--top"></div>
+      <img src="./assets/images/logo.png">
+      <div class="Aligner-item Aligner-item--bottom"></div>
+    </div>
+  </div>
+  
+  <ion-header style="background-color: rgb(10,01,01);">
+    <ion-navbar>
+  
+  
+  
+      <button ion-button menuToggle>
+        <ion-icon name="menu" class="menu"></ion-icon>
+      </button>
+      <img src="./assets/images/drawable-xxxhdpi-icon.png" style="float:right; height: 13%; width:13%;  ">
+      <div center text-center style="color: white; font-size: 1.25em; "><b>About Us</b> </div>
+  
+    </ion-navbar>
+  </ion-header>
+
+<ion-content center text-center  style="background: linear-gradient(to bottom,  #fff 0%, #000 100%);">
+    
+  <ion-img width="100%" height="30%" src="./assets/images/aboutusbanner.jpg"></ion-img>
+
+  
+        <ion-card-header>
+            <b>“Real Touch"</b> <br>
+            A Simple Matter of Status <br>
+            The Luxury Laminates Manufacturer
+        </ion-card-header>
+        <ion-card-content>
+            If we consider the history of recent past , the past quarter century , they leap to the extraordinary transformation that have changed the way we live , produce and thinking , in india and around the world. Realtouch grew up in the scenario in rapid and continuous change, developing gradually , revealing ability to anticipate change and achieve the objectives.Founded 1998, the Realtouch is a “case history” in the field of interior decorative for the home and office , exemplary,even in the context of entrepreneurship, although it did have leading industrial models.
+        </ion-card-content>
+        <ion-card-content>
+            Indeed, it is the story of a company that shares from a size and a craft mentality in the second half of the nineties,through the foresight of the choice made by the property, it is deeply transformed , growing up to become one of thelargest industrial groups in the difficult market of furniture by changing the concept of interior decoration it a truecenter design and services for the home interior for the home and office, with the production of decorative product intimes absolutely certain. One of the Objectives have been achieved , we can say , the most important is the optimizationof the interior product of decoration , allowing you to achieve the most balanced quality and service ratio.
+        </ion-card-content>
+        <ion-grid>
+        <ion-row justify-content-center>
+        <ion-col col-6 align-self-start>
+           <button ion-button round style="background: linear-gradient(to bottom,  #fff 0%, #000 100%);" (click)="onClickofcomapnyProfile()">
+          Company Profile
+        </button>
+          </ion-col>
+        <ion-col col-6 align-self-start>  
+        <button ion-button round style="background: linear-gradient(to bottom,  #fff 0%, #000 100%);" (click)="onClickofvission()" >
+          Vission & Mission           
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

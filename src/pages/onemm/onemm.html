@@ -1,0 +1,110 @@
+<!--
+  Generated template for the OnemmPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="./assets/images/logo.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+<ion-header style="background-color: rgb(10,01,01);">
+  <ion-navbar>
+
+
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="menu"></ion-icon>
+    </button>
+    <img src="./assets/images/drawable-xxxhdpi-icon.png" style="float:right; height: 13%; width:13%;  ">
+    <div center text-center style="color: white; font-size: 1.25em; ">
+      <b>1MM</b>
+    </div>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content center text-center style="background-color: black; ">
+
+  <div center text-center *ngFor="let type of productType; let i=index" (click)="fetchProducts(type,i)" class="wrapper">
+    
+    <img width="100%" height="10%" src="./assets/images/products/{{type}}.jpg">
+    </div>
+
+
+    <!-- <div center text-center (click)="fetchProducts('textures')" class="wrapper">
+      <img width="100%" height="10%" src="./assets/images/products/textures.jpg">
+
+
+    </div>
+
+    <div center text-center (click)="fetchProducts('solids')" class="wrapper">
+      <img width="100%" height="10%" src="./assets/images/products/solids.jpg">
+
+
+    </div>
+    <div center text-center (click)="onClickWoodgrain()" class="wrapper">
+      <img width="100%" height="10%" src="./assets/images/products/woodgrain.jpg">
+
+
+    </div>
+
+    <div center text-center (click)="onClickSparkling()" class="wrapper">
+      <img width="100%" height="10%" src="./assets/images/products/sparkling.jpg">
+
+
+    </div>
+
+    <div center text-center (click)="onClickColourcore()" class="wrapper">
+      <img width="100%" height="10%" src="./assets/images/products/colourcore.jpg">
+
+
+    </div>
+    <div center text-center (click)="onClickEshine()" class="wrapper">
+      <img width="100%" height="10%" src="./assets/images/products/eshine.jpg">
+
+
+    </div>
+    <div center text-center (click)="onClickSpeciallaminates()" class="wrapper">
+      <img width="100%" height="10%" src="./assets/images/products/speciallaminates.jpg">
+
+
+    </div> -->
+
+    <div center text-center class="primary_div">
+      <div style="color: white; font-size: 1.25em; padding-top: 15px;">
+        <b>share us on</b>
+      </div>
+    </div>
+
+    <ion-grid style="color:white; height: 20%;">
+
+      <ion-row>
+        <ion-col align-self-start>
+          <div style="align-content:center;">
+
+            <ion-icon ios="logo-facebook" md="logo-facebook">Facebook</ion-icon>
+          </div>
+        </ion-col>
+        <ion-col align-self-center>
+          <div>
+            <ion-icon ios="logo-instagram" md="logo-instagram">Instagram</ion-icon>
+          </div>
+        </ion-col>
+        <ion-col align-self-end>
+          <div>
+            <ion-icon ios="logo-youtube" md="logo-youtube" (click)="onWhatsappShare()">YouTube22</ion-icon>
+
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+</ion-content>
